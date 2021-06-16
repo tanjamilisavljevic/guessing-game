@@ -14,13 +14,13 @@ document.getElementById('guessButton').addEventListener('click', function (){
     console.log(theGuess);
 
     if (Number(theGuess) === randomNumber) {
-        document.write(`Awesome! You number ${theGuess} was correct. You can be named many things, hungry not being one of them.`)
+        alert(`Awesome! You number ${theGuess} was correct. You can be named many things, hungry not being one of them.`)
     }
     else if (Number(theGuess)+1 === randomNumber || Number(theGuess)-1 === randomNumber ){
-        document.write(`So close, but you just missed it! Are you in a class that started on the thirteenth or what?`)
+        alert(`So close, but you just missed it! Are you in a class that started on the thirteenth or what?`)
     }
     else {
-        document.write(`Bummer... You guessed ${theGuess} and the secret number was ${randomNumber}.`)
+        alert(`Bummer... You guessed ${theGuess} and the secret number was ${randomNumber}.`)
     }
 
 })
