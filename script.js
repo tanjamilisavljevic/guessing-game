@@ -7,7 +7,7 @@ const getRandomNumber = (max) => {
 const peopleInOurGroup = 15;
 const randomNumber = getRandomNumber(peopleInOurGroup);
 
-document.getElementById('guessLabel').innerHTML = `Guess a number from 1 to ${peopleInOurGroup}: `;
+document.getElementById('guessLabel').innerHTML = `Guess a number from 1 to ${peopleInOurGroup}: `; 
 
 document.getElementById('guessButton').addEventListener('click', function (){
     const theGuess = document.getElementById('theGuess').value;
