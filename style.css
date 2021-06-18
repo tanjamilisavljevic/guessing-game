@@ -2,18 +2,57 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 100px;
-    color: rgb(4, 50, 29);
-    font-size: 20px;
-    font-weight: bolder;
 }
 
 .wrap{
     display: flex;
-    padding: 15px;
     justify-content: center;
+    margin-top: 3vh;
 }
+
 .bigWrapper{
-    padding: 100px;
     background-image: linear-gradient(darksalmon, lightsalmon);
+    margin-top: 5vh;
+    padding: 10vw;
+    box-shadow: 5px 10px 15px indianred;
+}
+
+#guessLabel{
+    font-size: xxx-large;
+    font-family: 'PT Serif Caption', serif;
+    color: #fff4f1;
+    text-shadow: 5px 10px 15px indianred;
+}
+
+#theGuess{
+    min-width: 20vw;
+    min-height: 3vh;
+    border-radius: 25px;
+    font-family: 'PT Serif Caption', serif;
+    font-size: medium;
+}
+
+#guessButton{
+    border-radius: 25px;
+    font-size: x-large;
+    padding: 10px;
+    font-family: 'PT Serif Caption', serif;
+}
+
+#guessButton:hover{
+    cursor: pointer;
+}
+
+#guessButton:active{
+    background-color: indianred;
+    color: #fff4f1;
+}
+
+@media (min-width: 640px) {
+    .wrap{
+        margin-top: 8vh;
+    }
+    #theGuess{
+        min-height: 4vh;
+    }
 }
